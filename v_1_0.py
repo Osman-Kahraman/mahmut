@@ -17,7 +17,6 @@ warnings.filterwarnings('ignore')
 hafıza = []
 figMemory = {"ing": [], "tur": []}
 wanted_version = None
-token = None
 
 class Ui_MainWindow(object):
     def __init__(self):
@@ -311,7 +310,7 @@ class Ui_MainWindow(object):
         self.studyWords("Türkçe")
     
     def click(self):
-        global hafıza, wanted_version, token
+        global hafıza, wanted_version
         
         if self.pushButton.text() == "Kontrol Et":
             user_text = self.lineEdit.text().lower().replace(" ", "")
@@ -404,7 +403,7 @@ class Ui_MainWindow(object):
                 self.lineEdit.clear()
 
             elif self.lineEdit.text().lower().startswith("güncelle"):
-                wanted_version, token = self.lineEdit.text().lower().lstrip("güncelle ").split(" ")
+                wanted_version = self.lineEdit.text().lower().lstrip("güncelle ")
 
                 self.console_text("Güncellenmek istenen sürüm ayarlandı. \nArka plandaki köle robotların yeni sürümü eklemesi için lütfen programı kapatın. ")
                 self.lineEdit.clear()
@@ -507,6 +506,5 @@ def run():
         app.exec_()
 
         return {
-            "wanted_version": wanted_version, 
-            "token": token
+            "wanted_version": wanted_version
             }
