@@ -104,7 +104,7 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.label_2.setFont(font)
-        self.label_2.setText("\tBurası Komut İstemi çakmasıdır. Copyright hiç kimsenin bu arada...\n\n\n")
+        self.label_2.setText("\tCopyright Osman_Kahraman. \n\n\n")
         self.label_2.setObjectName("label_2")
         self.verticalLayout_3.addWidget(self.label_2)
         self.verticalLayout_4.addLayout(self.verticalLayout_3)
