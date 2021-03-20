@@ -16,6 +16,8 @@ warnings.filterwarnings('ignore')
 
 hafıza = []
 figMemory = {"ing": [], "tur": []}
+wanted_version = None
+token = None
 
 class Ui_MainWindow(object):
     def __init__(self):
@@ -309,7 +311,7 @@ class Ui_MainWindow(object):
         self.studyWords("Türkçe")
     
     def click(self):
-        global hafıza
+        global hafıza, wanted_version, token
         
         if self.pushButton.text() == "Kontrol Et":
             user_text = self.lineEdit.text().lower().replace(" ", "")
@@ -395,6 +397,16 @@ class Ui_MainWindow(object):
                 lineEdit_color = list(self.lineEdit.text().lower().lstrip("ard ").replace(" ", "").split(","))
                 self.color(int(lineEdit_color[0]), int(lineEdit_color[1]), int(lineEdit_color[2]))
                 self.console_text("Renk değişti. " + str(lineEdit_color))
+                self.lineEdit.clear()
+
+            elif self.lineEdit.text().lower().startswith("versiyon"):
+                self.console_text("v_1_0\n\n+ Mahmut, dünyaya merhaba dedi! \n\n20.03.2021 Perşembe 16:21")
+                self.lineEdit.clear()
+
+            elif self.lineEdit.text().lower().startswith("güncelle"):
+                wanted_version, token = self.lineEdit.text().lower().lstrip("güncelle ").split(" ")
+
+                self.console_text("Güncellenmek istenen sürüm ayarlandı. \nArka plandaki köle robotların yeni sürümü eklemesi için lütfen programı kapatın. ")
                 self.lineEdit.clear()
             
         if len(hafıza) == 2:
@@ -486,9 +498,15 @@ class Ui_MainWindow(object):
 def run():
     if __name__ != "__main__":
         import sys
+
         app = QtWidgets.QApplication(sys.argv)
         MainWindow = QtWidgets.QMainWindow()
         ui = Ui_MainWindow()
         ui.setupUi(MainWindow)
         MainWindow.show()
-        sys.exit(app.exec_())
+        app.exec_()
+
+        return {
+            "wanted_version": wanted_version, 
+            "token": token
+            }
