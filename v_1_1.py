@@ -800,7 +800,7 @@ class Ui_MainWindow(object):
 
             elif self.lineEdit.text().lower().startswith("versiyon"):
 
-                self.console_text("v_1_0\n--------------------------------------------------------------------------\n\n+ Çalışılan kelime skorlarını kaydetme bölümündeki sorun halledildi. \n--------------------------------------------------------------------------\n\n21.03.2021 Perşembe 01:23")
+                self.console_text("v_1_1\n--------------------------------------------------------------------------\n\n+ Çalışılan kelime skorlarını kaydetme bölümündeki sorun halledildi. \n--------------------------------------------------------------------------\n\n21.03.2021 Perşembe 01:23")
 
                 self.lineEdit.clear()
 
