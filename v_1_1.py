@@ -995,7 +995,7 @@ class Ui_MainWindow(object):
 
 
 
-def run():
+def run(*args, **kwargs):
 
     if __name__ != "__main__":
 
