@@ -868,7 +868,7 @@ class KeyTracker(QtWidgets.QMainWindow, Ui_MainWindow):
         elif e.key() == 94: #Alt + 3 key
             self.word_info()
 
-def run():
+def run(*args, **kwargs):
     if __name__ != "__main__" and check.run():
         app = QtWidgets.QApplication(sys.argv)
         app.setStyle('Windows')
