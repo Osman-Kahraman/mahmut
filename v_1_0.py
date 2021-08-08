@@ -494,7 +494,7 @@ class Ui_MainWindow(object):
             self.pushButton.setText("↑")
             self.console_text(str(150 * "+"), assets = False)
 
-def run():
+def run(*args, **kwargs):
     if __name__ != "__main__":
         import sys
 
