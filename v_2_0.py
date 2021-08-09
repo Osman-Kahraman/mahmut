@@ -74,9 +74,12 @@ class Ui_MainWindow(object):
             self.con = sqlite3.connect("datas\\statistics.db")
             self.cursor = self.con.cursor()
 
-            self.cursor.execute("Select * From data")
-
-            self.words_scores_data = dict([(name, {"eng": eng_scores, "tur": tur_scores}) for name, eng_scores, tur_scores in self.cursor.fetchall()])
+            try:
+                self.cursor.execute("Select * From data")
+            except:
+                self.words_scores_data = {}
+            else:
+                self.words_scores_data = dict([(name, {"eng": eng_scores, "tur": tur_scores}) for name, eng_scores, tur_scores in self.cursor.fetchall()])
         #---------------------------------------------------------------------------------------------
 
     def setupUi(self, MainWindow):
