@@ -843,6 +843,7 @@ Osman Kahraman
                     with open(PATH, "r", encoding = "utf-8") as file:
                         words = file.read().split("\n")
                         
+                        self.console_text(PATH)
                         errors = ""
                         for word in words:
                             try:
