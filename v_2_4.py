@@ -832,7 +832,7 @@ Osman Kahraman
 
                 del name
             elif self.lineEdit.text().lower().startswith("içe aktar"):
-                PATH = self.lineEdit.text()[9:].replace(" ", "")
+                PATH = self.lineEdit.text()[9:].strip(" ")
                 if not PATH:
                     PATH, _type = QtWidgets.QFileDialog.getOpenFileName(self, "Lütfen içeri aktarılacak konumu belirleyin.", os.getenv("DESKTOP"), "Yazı dosyası (*.txt)")
                 else:
@@ -880,12 +880,12 @@ Osman Kahraman
                         if errors:
                             text += "\n\nEklenemeyen kelimeler;\n{}".format(errors)
 
-                            with open(PATH, "w", encoding = "utf-8") as file:
+                            with open("{}/errors.txt".format(PATH[:-PATH[::-1].find("/")]), "w", encoding = "utf-8") as file:
                                 file.write(errors)
 
                         self.console_text(text, assets = False)
 
-                        del eng_word, tur_word, words, errors, text
+                        del words, errors, text
                 except FileNotFoundError:
                     self.console_text("{} dosyası bulunamadı.".format(PATH), assets = False)
 
