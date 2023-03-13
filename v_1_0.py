@@ -75,7 +75,7 @@ class Ui_MainWindow(object):
         self.palette.setBrush(QtGui.QPalette.Disabled, QtGui.QPalette.Window, dark_gray_brush)
         MainWindow.setPalette(self.palette)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("app_images\\Fatih_Terim.jpg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("app_images\\terim.jpg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setWindowOpacity(1.0)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
