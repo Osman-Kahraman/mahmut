@@ -79,7 +79,7 @@ class Ui_MainWindow(object):
                               QtGui.QPalette.Window, dark_gray_brush)
         MainWindow.setPalette(self.palette)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("app_images\\terim.jpg.jpg"),
+        icon.addPixmap(QtGui.QPixmap("app_images\\terim.jpg"),
                        QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setWindowOpacity(1.0)
@@ -461,8 +461,7 @@ class Ui_MainWindow(object):
                     boşluk_sayısı = 50
                     
                     boşluk_sayısı = boşluk_sayısı - len(hafıza[0])
-                    yazı = (boşluk * boşluk_sayısı) + \
-                        hafıza[0] + " : " + hafıza[1] + "\n"
+                    yazı = (boşluk * boşluk_sayısı) + hafıza[0] + " : " + hafıza[1] + "\n"
                     file.write(yazı)
                     
                     if self.satır_sayısı in range(0, self.satır_sayısı + 1, 40):
@@ -478,7 +477,7 @@ class Ui_MainWindow(object):
                 self.console_text("Eklemeden vazgeçildi.")
                 hafıza = []
                 self.addWords()
-    
+
     def new_tab(self):
         self.MainWindow = QtWidgets.QMainWindow()
         self.ui = Ui_MainWindow()
