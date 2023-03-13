@@ -152,7 +152,7 @@ class Ui_MainWindow(object):
 
         icon = QtGui.QIcon()
 
-        icon.addPixmap(QtGui.QPixmap("app_images\\Fatih_Terim.jpg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("app_images\\terim.jpg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
 
         MainWindow.setWindowIcon(icon)
 
