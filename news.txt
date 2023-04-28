@@ -1,5 +1,6 @@
-MÜJDE!!! MAHMUT GELİŞİYOR, VERSİYON 3 GELDİ
+            MÜJDE!!! MAHMUT GELİŞİYOR, VERSİYON 3 GELDİ
 
+---------------------------------------------------------------------------
 Yenilikler; 
 
 + güncelleme bölümünde internet olmazsa gelen hata düzeltildi
@@ -8,5 +9,6 @@ Yenilikler;
 + yeni komutlar eklendi
 + versiyon güncellemesindeyken istenen manuel kapatma otomatiğe çevrildi
 + 
+---------------------------------------------------------------------------
 
-güncellemek için güncelle v_3_0 ya da güncelle yazabilirsin. 
+! Güncellemek için güncelle v_3_0 ya da güncelle yazabilirsin. 
