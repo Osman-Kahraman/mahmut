@@ -1,0 +1,12 @@
+Müjde!!! Mahmut gelişiyor, versiyon 3 geldi.
+
+Yenilikler; 
+
++ güncelleme bölümünde internet olmazsa gelen hata düzeltildi
++ konsolda görsel düzeltmeleri
++ içe aktar komutunda dosya yolu verilmemesi sonucu oluşan çökme düzeltildi
++ yeni komutlar eklendi
++ versiyon güncellemesindeyken istenen manuel kapatma otomatiğe çevrildi
++ 
+
+güncellemek için güncelle v_3_0 ya da güncelle yazabilirsin. 
