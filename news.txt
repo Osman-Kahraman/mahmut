@@ -11,4 +11,4 @@ Yenilikler;
 + 
 ---------------------------------------------------------------------------
 
-! Güncellemek için güncelle v_3_0 ya da güncelle yazabilirsin. 
+! Güncellemek için 'güncelle v_3_0' ya da 'güncelle' yazabilirsin. 
