@@ -547,20 +547,12 @@ Copyright @Osman-Kahraman''', assets = False
         """self.label_2.setText("<b>five</b> ")"""
 
     def news(self):
-        try:
-            main_r = requests.get(
-                'https://raw.githubusercontent.com/{owner}/{repo}/master/news.txt'.format(owner = 'Osman-Kahraman', repo = 'mahmut'),
-                headers = {
-                'accept': 'application/vnd.github.v3.raw',
-                'authorization': 'token {}'.format('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')
-                }
-            )
+        main_r = requests.get(
+            'https://raw.githubusercontent.com/{owner}/{repo}/refs/heads/master/news.txt'.format(owner = 'Osman-Kahraman', repo = 'mahmut'),
+        )
 
-            self.console_write(main_r.text, assets = False)
-        except requests.exceptions.ConnectionError:
-            pass
-        finally:
-            self.console()
+        self.console_write(main_r.text, assets = False)
+        self.console()
 
     def console(self):
         self.label.clear()
