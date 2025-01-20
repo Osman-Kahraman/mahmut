@@ -1,5 +1,7 @@
 # Mahmut
 
+![mahmut](https://github.com/user-attachments/assets/c702b644-4545-47b6-8893-a4e0863dacb6)
+
 Mahmut is a lightweight and efficient automation tool designed to streamline repetitive tasks using Python. Whether you need to automate file operations, data processing, or system commands, Mahmut provides a simple yet powerful way to improve productivity. It integrates various functionalities such as graphical user interfaces (GUI), data visualization, and automated processes.
 
 ---
