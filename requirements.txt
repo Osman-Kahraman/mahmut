@@ -1,0 +1,15 @@
+importlib-metadata
+smtplib
+traceback
+random
+time
+subprocess
+numpy
+sqlite3
+warnings
+json
+os
+requests
+PyQt5
+matplotlib
+Pillow
