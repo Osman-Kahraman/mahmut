@@ -1,6 +1,6 @@
 # Mahmut
 
-Mahmut is a lightweight and efficient automation tool designed to streamline repetitive tasks using Python. Whether you need to automate file operations, data processing, or system commands, Mahmut provides a simple yet powerful way to improve productivity.
+Mahmut is a lightweight and efficient automation tool designed to streamline repetitive tasks using Python. Whether you need to automate file operations, data processing, or system commands, Mahmut provides a simple yet powerful way to improve productivity. It integrates various functionalities such as graphical user interfaces (GUI), data visualization, and automated processes.
 
 ---
 
@@ -9,6 +9,8 @@ Mahmut is a lightweight and efficient automation tool designed to streamline rep
 - **Highly Customizable** – Modify scripts to suit your specific workflow needs.
 - **Cross-Platform Support** – Works seamlessly on Windows (macOS and Linux is not supported yet).
 - **Lightweight & Fast** – Minimal dependencies, ensuring smooth performance.
+
+---
 
 ## Installation
 Clone the repository and navigate into the project directory:
@@ -22,6 +24,8 @@ Install the required dependencies:
 pip install -r requirements.txt
 ```
 
+---
+
 ## Usage
 Run the script to start using Mahmut:
 ```sh
@@ -29,6 +33,8 @@ python Mahmut.py
 ```
 
 Modify the script to fit your specific automation needs.
+
+---
 
 ## Contributing
 Contributions are welcome! Follow these steps to contribute:
@@ -38,11 +44,14 @@ Contributions are welcome! Follow these steps to contribute:
 4. Push to your fork (`git push origin feature-name`).
 5. Open a pull request.
 
+---
+
 ## Credits
 - **Osman Kahraman** – Creator and main developer.
 - Talha Gözütok (https://github.com/tgztk) - Tester.
 - Inspired by various Python automation tools.
 
+---
+
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
