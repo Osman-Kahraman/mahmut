@@ -2,7 +2,7 @@
 
 ![mahmut](https://github.com/user-attachments/assets/c702b644-4545-47b6-8893-a4e0863dacb6)
 
-Mahmut is a lightweight and efficient automation tool designed to streamline repetitive tasks using Python. Whether you need to automate file operations, data processing, or system commands, Mahmut provides a simple yet powerful way to improve productivity. It integrates various functionalities such as graphical user interfaces (GUI), data visualization, and automated processes.
+Mahmut is an open-source vocabulary learning system that helps users improve their English–Turkish word knowledge through an interactive and structured workflow. It focuses on active recall, repetition, and measurable progress, transforming vocabulary practice into a consistent learning habit. Users can track their performance with scoring systems, grouped word sets, and visualized progress over time. Built with PyQt5, Mahmut offers a customizable and distraction-free interface, combining efficient learning techniques with a modern user experience.
 
 ---
 
